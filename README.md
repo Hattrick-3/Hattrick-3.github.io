@@ -6,7 +6,7 @@ My works
 [Дизайн-студия Воздух](Hattrick-3.github.io/Воздух/index.html) - Сайт дизайн-студии Воздух(разрешение 1920px)
 
 
-[Ping-Pong](Hattrick-3.github.io/PingPong/test.html)- Небольшая игра Pinh-Pong на JQuery
+[Ping-Pong](Hattrick-3.github.io/PingPong/test.html)- Небольшая игра Ping-Pong на JQuery
 
 [ToDoList](Hattrick-3.github.io/toDoList JQuery/deals.html) - Страничка со списком дел
 
