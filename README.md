@@ -1,13 +1,13 @@
 # Александр Кошелев
 My works
 
-[Новостное агенство](Hattrick-3.github.io/Новостное агенство/news agency.html)
+[Новостное агенство](Hattrick-3.github.io/Новостное агенство/news agency.html)-Сайт Новостного агентства(декстоп, планшет, смартфон)
 
-[Дизайн-студия Воздух](Hattrick-3.github.io/Воздух/index.html)
+[Дизайн-студия Воздух](Hattrick-3.github.io/Воздух/index.html) - Сайт дизайн-студии Воздух(разрешение 1920px)
 
 
-[Ping-Pong](Hattrick-3.github.io/PingPong/test.html)
+[Ping-Pong](Hattrick-3.github.io/PingPong/test.html)- Небольшая игра Pinh-Pong на JQuery
 
-[ToDoList](Hattrick-3.github.io/toDoList JQuery/deals.html)
+[ToDoList](Hattrick-3.github.io/toDoList JQuery/deals.html) - Страничка со списком дел
 
-[Переводчик](Hattrick-3.github.io/Translater/test.html)
+[Переводчик](Hattrick-3.github.io/Translater/test.html)-Страничка с переводчиком(API Яндекс)
