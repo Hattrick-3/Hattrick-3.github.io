@@ -9,3 +9,5 @@ My works
 [Ping-Pong](Hattrick-3.github.io/PingPong/test.html)
 
 [ToDoList](Hattrick-3.github.io/toDoList JQuery/deals.html)
+
+[Переводчик](Hattrick-3.github.io/Translater/test.html)
