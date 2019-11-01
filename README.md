@@ -11,3 +11,5 @@ My works
 [ToDoList](Hattrick-3.github.io/toDoList JQuery/deals.html) - Страничка со списком дел
 
 [Переводчик](Hattrick-3.github.io/Translater/test.html)-Страничка с переводчиком(API Яндекс)
+
+[Виджет комментариев](Hattrick-3.github.io/WidjetComments React-Redux/index.html)- Виджет комментариев на React-Redux
