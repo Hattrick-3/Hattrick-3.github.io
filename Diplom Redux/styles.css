@@ -1,0 +1,101 @@
+h1{
+  margin: auto;
+}
+ul{
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+   flex-wrap: wrap;
+}
+li{
+
+  padding: 10px;
+  vertical-align: top;
+}
+.photo{
+  width: 400px;
+
+}
+.full_photo{
+  width:800px;
+}
+.date{
+  color: #708090;
+  font-size: 12px;
+  font-style: italic;
+}
+.likes{
+  float: right;
+}
+.not_like{
+  width:20px;
+  height: 20px;
+  background-image: url('src/img/not_like.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+}
+.like{
+    background-image: url('src/img/like.png');
+    width:20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    border: none;
+    cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+.val_likes{
+  vertical-align: top;
+
+}
+#app{
+
+  margin: 0 auto;
+
+}
+.container{
+  background-image: url('src/img/10730.jpg');
+  margin: 0 auto;
+  width: 1000px;
+  position: relative;
+  display: flex;
+}
+.back{
+  margin-top: 36px;
+margin-left: 50px;
+background-color: blue;
+width: 150px;
+height: 30px;
+color: white;
+border: none;
+cursor: pointer;
+}
+h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.block_photo{
+  margin-bottom: 50px;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.btn{
+  background-color: #2174fd;
+  color: #fff;
+  width: 225px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+}
