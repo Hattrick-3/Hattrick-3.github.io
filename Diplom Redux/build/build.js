@@ -8775,7 +8775,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var unsplash = exports.unsplash = new _unsplashJs2.default({
     applicationId: "b68affaf980d31ea84bfcf00615259bde49eef79fa53c1ebb63b3bfff165a840",
     secret: "9aa4e9137138dd70cce583c32c16027fe965f24a85c067133f00b572cde24a25",
-    callbackUrl: "https://hattrick-3.github.io/Hattrick-3.github.io/Diplom%20Redux/index.html/auth"
+    callbackUrl: "http://Hattrick-3.github.io/Diplom%20Redux/index.html/auth"
 
 });
 var authenticationUrl = exports.authenticationUrl = unsplash.auth.getAuthenticationUrl(["public", "write_likes"]);
@@ -16388,9 +16388,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _react2.default.createElement(
     'div',
     null,
-    _react2.default.createElement(_reactRouter.Route, { exact: true, path: 'https://hattrick-3.github.io/Hattrick-3.github.io/Diplom%20Redux/index.html', component: _home2.default }),
-    _react2.default.createElement(_reactRouter.Route, { path: 'https://hattrick-3.github.io/Hattrick-3.github.io/Diplom%20Redux/index.html/auth', component: _auth2.default }),
-    _react2.default.createElement(_reactRouter.Route, { path: 'https://hattrick-3.github.io/Hattrick-3.github.io/Diplom%20Redux/index.html/photo/:id', component: _detailPhoto2.default })
+    _react2.default.createElement(_reactRouter.Route, { exact: true, path: '/Hattrick-3.github.io/Diplom%20Redux/index.html', component: _home2.default }),
+    _react2.default.createElement(_reactRouter.Route, { path: '/Hattrick-3.github.io/Diplom%20Redux/index.html/auth', component: _auth2.default }),
+    _react2.default.createElement(_reactRouter.Route, { path: '/Hattrick-3.github.io/Diplom%20Redux/index.html/photo/:id', component: _detailPhoto2.default })
 );
 
 /***/ }),
