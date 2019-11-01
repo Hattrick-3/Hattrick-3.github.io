@@ -13,3 +13,5 @@ My works
 [Переводчик](Hattrick-3.github.io/Translater/test.html)-Страничка с переводчиком(API Яндекс)
 
 [Виджет комментариев](Hattrick-3.github.io/WidjetComments React-Redux/index.html)- Виджет комментариев на React-Redux
+
+[Диплом](Hattrick-3.github.io/Diplom Redux/index.html)
