@@ -16388,7 +16388,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _react2.default.createElement(
     'div',
     null,
-    _react2.default.createElement(_reactRouter.Route, { exact: true, path: '/Hattrick-3.github.io/Diplom%20Redux/index.html', component: _home2.default }),
+    _react2.default.createElement(_reactRouter.Route, { exact: true, path: 'http://Hattrick-3.github.io/Diplom%20Redux/index.html', component: _home2.default }),
     _react2.default.createElement(_reactRouter.Route, { path: '/Hattrick-3.github.io/Diplom%20Redux/index.html/auth', component: _auth2.default }),
     _react2.default.createElement(_reactRouter.Route, { path: '/Hattrick-3.github.io/Diplom%20Redux/index.html/photo/:id', component: _detailPhoto2.default })
 );
