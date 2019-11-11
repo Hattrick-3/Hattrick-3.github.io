@@ -6,8 +6,8 @@ import DetailPhoto from './containers/detail-photo';
 
 export default (
 	<div>
-        <Route exact path="https://hattrick-3.github.io/Hattrick-3.github.io/Diplom%20Redux/index.html" component={Home} />
-				<Route path="https://hattrick-3.github.io/Hattrick-3.github.io/Diplom%20Redux/index.html/auth" component={Auth} />
-        <Route path="https://hattrick-3.github.io/Hattrick-3.github.io/Diplom%20Redux/index.html/photo/:id" component={DetailPhoto} />
+        <Route exact path="/" component={Home} />
+				<Route path="/auth" component={Auth} />
+        <Route path="/photo/:id" component={DetailPhoto} />
     </div>
 );

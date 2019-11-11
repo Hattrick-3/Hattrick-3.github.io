@@ -2,9 +2,10 @@ import Unsplash, { toJson } from 'unsplash-js';
 
 
 export const unsplash = new Unsplash({
-  applicationId:"b68affaf980d31ea84bfcf00615259bde49eef79fa53c1ebb63b3bfff165a840",
-  secret:"9aa4e9137138dd70cce583c32c16027fe965f24a85c067133f00b572cde24a25",
-  callbackUrl: "https://hattrick-3.github.io/Hattrick-3.github.io/Diplom%20Redux/index.html/auth",
+  applicationId:"1d6674a7f078b2dc709b30fc011e7d1cd7a820862056acb4fd6af493137a4404",
+  secret:"c8feb8f8541c2c586a6958b75bf16867639dea31d9e679584d743fc7bdd9646b",
+  //callbackUrl: "http://localhost:8080/auth",
+  callbackUrl: "http://aleks2s5.beget.tech/auth",
 
 });
 export const authenticationUrl = unsplash.auth.getAuthenticationUrl([

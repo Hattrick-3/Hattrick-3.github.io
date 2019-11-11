@@ -17,13 +17,16 @@ class Home extends React.Component {
 			<main className="main-wrapper">
 				<header className="header">
 					<div className="container-my">
-						<h1>Unsplash Skillbox App</h1>
+						<h1>Дипломная работа по курсу "JavaScript"</h1>
+						<h2>Выполнил: Кошелев Александр</h2>
 					</div>
 				</header>
 			    <div className="block-home">
 			        <div className="registration-form">
-			        	<p>Авторизация через Unslash.com</p>
-			            <button className="but_auth" onClick={this.handleClick.bind(this)}>Authorization</button>
+			        	<p>Для продолжения необходимо авторизироваться через Unsplash.com</p>
+			          <div className='row_btn'>
+									<button className="but_auth" onClick={this.handleClick.bind(this)} Link to = '/auth'>Авторизироваться</button>
+								</div>
 			        </div>
 			    </div>
 		    </main>

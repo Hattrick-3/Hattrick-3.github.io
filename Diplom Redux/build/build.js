@@ -8773,9 +8773,10 @@ var _unsplashJs2 = _interopRequireDefault(_unsplashJs);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var unsplash = exports.unsplash = new _unsplashJs2.default({
-    applicationId: "b68affaf980d31ea84bfcf00615259bde49eef79fa53c1ebb63b3bfff165a840",
-    secret: "9aa4e9137138dd70cce583c32c16027fe965f24a85c067133f00b572cde24a25",
-    callbackUrl: "http://Hattrick-3.github.io/Diplom%20Redux/index.html/auth"
+    applicationId: "1d6674a7f078b2dc709b30fc011e7d1cd7a820862056acb4fd6af493137a4404",
+    secret: "c8feb8f8541c2c586a6958b75bf16867639dea31d9e679584d743fc7bdd9646b",
+    //callbackUrl: "http://localhost:8080/auth",
+    callbackUrl: "http://aleks2s5.beget.tech/auth"
 
 });
 var authenticationUrl = exports.authenticationUrl = unsplash.auth.getAuthenticationUrl(["public", "write_likes"]);
@@ -9081,30 +9082,34 @@ var DetailPhoto = function (_Component) {
         value: function render() {
             var id = this.props.params.id;
             var className = this.props.photos[+id].liked_by_user ? 'like' : 'not_like';
+            var h = document.documentElement.clientHeight;
+            var hh = +h - 180;
+            window.scrollTo(0, 0);
 
             return _react2.default.createElement(
                 'div',
-                { className: 'container' },
+                { className: 'container_photo' },
                 _react2.default.createElement(
                     'div',
-                    null,
+                    { className: 'cont' },
                     _react2.default.createElement(
                         'div',
-                        null,
+                        { className: 'block_profile' },
                         _react2.default.createElement(
                             'a',
                             { href: this.props.photos[+id].user.links.html },
-                            _react2.default.createElement('img', { src: this.props.photos[+id].user.profile_image.small }),
+                            _react2.default.createElement('img', { className: 'profile_img', src: this.props.photos[+id].user.profile_image.small }),
+                            '\xA0\xA0',
                             this.props.photos[+id].user.name
                         )
                     ),
-                    _react2.default.createElement('img', { className: 'full_photo', src: this.props.photos[+id].urls.regular }),
+                    _react2.default.createElement('img', { className: 'full_photo', src: this.props.photos[+id].urls.regular, style: { maxHeight: hh + "px" } }),
                     _react2.default.createElement(
                         'div',
                         { className: 'date' },
                         _react2.default.createElement(
                             'span',
-                            null,
+                            { className: 'created' },
                             '\u041E\u043F\u0443\u0431\u043B\u0438\u043A\u043E\u0432\u0430\u043D\u043E ',
                             this.props.photos[+id].created_at
                         ),
@@ -9123,7 +9128,7 @@ var DetailPhoto = function (_Component) {
                 ),
                 _react2.default.createElement(
                     'div',
-                    null,
+                    { className: 'btn_back' },
                     _react2.default.createElement(
                         'button',
                         { className: 'back', onClick: _reactRouter.browserHistory.goBack },
@@ -9216,7 +9221,12 @@ var Home = function (_React$Component) {
 						_react2.default.createElement(
 							'h1',
 							null,
-							'Unsplash Skillbox App'
+							'\u0414\u0438\u043F\u043B\u043E\u043C\u043D\u0430\u044F \u0440\u0430\u0431\u043E\u0442\u0430 \u043F\u043E \u043A\u0443\u0440\u0441\u0443 "JavaScript"'
+						),
+						_react2.default.createElement(
+							'h2',
+							null,
+							'\u0412\u044B\u043F\u043E\u043B\u043D\u0438\u043B: \u041A\u043E\u0448\u0435\u043B\u0435\u0432 \u0410\u043B\u0435\u043A\u0441\u0430\u043D\u0434\u0440'
 						)
 					)
 				),
@@ -9229,12 +9239,16 @@ var Home = function (_React$Component) {
 						_react2.default.createElement(
 							'p',
 							null,
-							'\u0410\u0432\u0442\u043E\u0440\u0438\u0437\u0430\u0446\u0438\u044F \u0447\u0435\u0440\u0435\u0437 Unslash.com'
+							'\u0414\u043B\u044F \u043F\u0440\u043E\u0434\u043E\u043B\u0436\u0435\u043D\u0438\u044F \u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E \u0430\u0432\u0442\u043E\u0440\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F \u0447\u0435\u0440\u0435\u0437 Unsplash.com'
 						),
 						_react2.default.createElement(
-							'button',
-							{ className: 'but_auth', onClick: this.handleClick.bind(this) },
-							'Authorization'
+							'div',
+							{ className: 'row_btn' },
+							_react2.default.createElement(
+								'button',
+								{ className: 'but_auth', onClick: this.handleClick.bind(this), Link: true, to: '/auth' },
+								'\u0410\u0432\u0442\u043E\u0440\u0438\u0437\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F'
+							)
 						)
 					)
 				)
@@ -16388,9 +16402,9 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = _react2.default.createElement(
     'div',
     null,
-    _react2.default.createElement(_reactRouter.Route, { exact: true, path: 'https://hattrick-3.github.io/Hattrick-3.github.io/Diplom%20Redux/index.html', component: _home2.default }),
-    _react2.default.createElement(_reactRouter.Route, { path: '/Hattrick-3.github.io/Diplom%20Redux/index.html/auth', component: _auth2.default }),
-    _react2.default.createElement(_reactRouter.Route, { path: '/Hattrick-3.github.io/Diplom%20Redux/index.html/photo/:id', component: _detailPhoto2.default })
+    _react2.default.createElement(_reactRouter.Route, { exact: true, path: '/', component: _home2.default }),
+    _react2.default.createElement(_reactRouter.Route, { path: '/auth', component: _auth2.default }),
+    _react2.default.createElement(_reactRouter.Route, { path: '/photo/:id', component: _detailPhoto2.default })
 );
 
 /***/ }),
@@ -37473,25 +37487,26 @@ var Photo = function Photo(props) {
     { className: "block_photo" },
     _react2.default.createElement(
       "div",
-      null,
+      { className: "block_profile" },
       _react2.default.createElement(
         "a",
         { href: photo.user.links.html },
-        _react2.default.createElement("img", { src: photo.user.profile_image.small }),
+        _react2.default.createElement("img", { className: "profile_img", src: photo.user.profile_image.small }),
+        "\xA0\xA0",
         photo.user.name
       )
     ),
     _react2.default.createElement(
       _reactRouter.Link,
       { to: "/photo/" + index },
-      _react2.default.createElement("img", { src: photo.urls.regular, className: "photo" })
+      _react2.default.createElement("img", { src: photo.urls.regular, className: "photo", title: "\u0423\u0432\u0435\u043B\u0438\u0447\u0438\u0442\u044C \u0444\u043E\u0442\u043E" })
     ),
     _react2.default.createElement(
       "div",
       { className: "date" },
       _react2.default.createElement(
         "span",
-        null,
+        { className: "created" },
         "\u041E\u043F\u0443\u0431\u043B\u0438\u043A\u043E\u0432\u0430\u043D\u043E ",
         photo.created_at
       ),
@@ -37501,8 +37516,11 @@ var Photo = function Photo(props) {
         _react2.default.createElement(
           "span",
           { className: "val_likes" },
-          "  ",
-          photo.likes,
+          photo.likes
+        ),
+        _react2.default.createElement(
+          "span",
+          null,
           " \u041D\u0440\u0430\u0432\u0438\u0442\u0441\u044F"
         )
       )
