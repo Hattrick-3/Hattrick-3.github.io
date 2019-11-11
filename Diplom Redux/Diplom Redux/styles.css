@@ -1,0 +1,171 @@
+body,html{
+  margin: 0;
+  font:  400 18px/1 'Kaushan Script', cursive;
+}
+.main-wrapper{
+position: fixed;
+padding: 100px;
+top: calc(50% - 196px);
+left: calc(50% - 397px);
+background-image: url('src/img/10730.jpg');
+
+}
+.row_btn{
+  display: flex;
+  justify-content: center;
+}
+button{
+  font:  400 14px/1 'Kaushan Script', cursive;
+}
+h1{
+  margin: auto;
+  padding-top: 20px;
+}
+h2,p{
+  text-align: center;
+}
+
+ul{
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+   flex-wrap: wrap;
+}
+li{
+
+  padding: 10px;
+  vertical-align: top;
+}
+
+.photo{
+  max-width: 400px;
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  border-top: 50px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  box-shadow: 3px 3px 3px #777;
+
+
+}
+.profile_img{
+  border-radius: 50%;
+  border: #888 1px solid;
+}
+.full_photo{
+  max-width:100%;
+  border: 10px solid #fff;
+  border-bottom: 45px solid #fff;
+  border-top: 50px solid #fff;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  box-shadow: 3px 3px 3px #777;
+
+}
+.date{
+  position: absolute;
+   width: 100%;
+   bottom:20px;
+   font: 400 18px/1 'Kaushan Script', cursive;
+   color: #888;
+
+}
+.created{
+  font-size: 10px;
+  padding-left: 10px;
+}
+.likes{
+  float: right;
+  padding-right:10px;
+}
+.not_like{
+  width:20px;
+  height: 20px;
+  background-image: url('src/img/not_like.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.like{
+    background-image: url('src/img/like.png');
+    width:20px;
+    height: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+a{
+  text-decoration: none;
+  color:black;
+  display: flex;
+  line-height: 34px;
+}
+.val_likes{
+  vertical-align: top;
+  font-weight:600;
+
+}
+#app{
+
+  margin: 0 auto;
+
+}
+.container{
+  background-image: url('src/img/10730.jpg');
+  margin: 0 auto;
+  max-width: 1900px;
+  min-width: 320px;
+  position: relative;
+  display: flex;
+}
+.back{
+  margin-top: 10px;
+  background-color: blue;
+  width: 150px;
+  height: 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.block_photo{
+  margin-bottom: 50px;
+  position: relative;
+}
+.block_profile{
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+.row{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 200px;
+}
+.btn{
+  background-color: #2174fd;
+  color: #fff;
+  width: 225px;
+  height: 55px;
+  border: none;
+  cursor: pointer;
+}
+.cont{
+  max-height: inherit;
+  margin-top: 20px;
+  position: relative;
+}
+.btn_back{
+  display:flex;
+  justify-content: center;
+  padding-bottom: 200px;
+}
