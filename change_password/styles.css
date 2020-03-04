@@ -202,11 +202,11 @@ html {
     padding-top: 100px;
   }
 
-  .change-password-buttons button.btn-primary {
+/*  .change-password-buttons button.btn-primary {
     -webkit-appearance: none !important;
     -moz-appearance: none !important;
   }
-  
+  */
   .change-password-buttons button.btn-secondary {
     display: none !important;
   }
@@ -226,8 +226,8 @@ html {
     padding-right: 20px !important;
     border: none !important;
     border-radius: 8px !important;
-    -webkit-appearance: none !important;
-    -moz-appearance: none !important;
+   /* -webkit-appearance: none !important;
+    -moz-appearance: none !important;*/
   }
 
   button:disabled {
