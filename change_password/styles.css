@@ -1,0 +1,548 @@
+@font-face {
+  font-family: 'Roboto-MediumItalic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Roboto-MediumItalic.woff');
+}
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Roboto-Medium.woff');
+}
+
+@font-face {
+  font-family: 'Roboto-Italic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Roboto-Italic.woff');
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Roboto-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Roboto-Light.woff');
+}
+
+@font-face {
+  font-family: 'Roboto-LightItalic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Roboto-LightItalic.woff');
+}
+
+@font-face {
+  font-family: "NissanBrand-BoldItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/NissanBrand-BoldItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NissanBrandBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/NissanBrandBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NissanBrandItalic";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/NissanBrandItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NissanBrandLight";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/NissanBrandLight.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NissanBrandRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/NissanBrandRegular.otf") format("opentype");
+}
+
+html {
+  height: 100%;
+}
+
+.password-hint {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  padding-top: 15px;
+}
+
+.title-text {
+  font-size: 20px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+}
+
+@media (max-width: 799px) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    background: #eee;
+    color: #343434;
+    font-family: "NissanBrandRegular";
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .title-container, .title-container-mobile-only{
+    width: 100%;
+    min-height: 48px;
+    background: linear-gradient(to top, #eee, #fff);
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+  .title-caret-left {
+    padding-left: 16px;
+    padding-right: 18px;
+    height: 40px;
+  }
+  .title-caret-left img {
+    margin-top: 10px;
+  }
+
+  .title-text.success {
+    padding-left: 16px !important;
+    margin-top: 14px;
+  }
+
+  .container-main, .container-main-try-again {
+    margin-top: 55px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 48px;
+  }
+
+  .container-logo-image {
+    display: none;
+  }
+
+  .container-help-text {
+    width: 100%;
+    padding-top: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  form {
+    margin-bottom: 96px;
+  }
+
+  .container-button {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    padding-top: 0px;
+    background-color: #fff;
+  }
+
+  .container-back-to-login {
+    display: none;
+  }
+
+  .title-help-text-portal {
+    display: none;
+  }
+
+  .message-help-text {
+    padding-bottom: 20px;
+  }
+
+  .tooltip-password {
+    display: none !important;
+  }
+
+  .alert-danger {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .container-password-change-success {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: white;
+  }
+
+  .container-password-change-text {
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .change-password-buttons button.btn-primary {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+  }
+  
+  .change-password-buttons button.btn-secondary {
+    display: none !important;
+  }
+
+  button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 48px !important;
+    border-radius: 0px !important;
+    background-color: #c3002f !important;
+    font-size: 20px !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border: none !important;
+    border-radius: 8px !important;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+  }
+
+  button:disabled {
+    opacity: 0.3 !important;
+  }
+
+  button.btn-secondary {
+    color: #c3002f !important;
+    background-color: #fff !important;
+    border: 1px solid #c3002f !important;
+  }
+}
+
+@media (min-width: 800px) {
+  .title-container-mobile-only{
+    display: none;
+  }
+  button {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100% !important;
+    height: 48px !important;
+    border-radius: 0px !important;
+    background-color: #00a6e3 !important;
+    font-size: 20px !important;
+    color: #fff !important;
+    box-shadow: none !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border: none !important;
+    border-radius: 8px !important;
+  }
+
+  button.forgot-password {
+    margin-top: -40px;
+  }
+
+  button:disabled {
+    opacity: 0.3 !important;
+  }
+
+  button.btn-secondary {
+    color: #00a6e3 !important;
+    background-color: #fff !important;
+    border: 1px solid #00a6e3 !important;
+  }
+
+  #oldPassword-show, #newPassword-show, #password-show, .container-logo {
+    display: none;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    background: #00a6e3;
+    color: #343434;
+    font-family: "Roboto-Regular";
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    justify-content: center;
+    align-items: center;
+  }
+  .title-text {
+    font-size: 24px;
+    font-family: "NissanBrandRegular";
+  }
+  .title-container {
+    width: 480px;
+    min-height: 48px;
+    background: linear-gradient(to top, #eee, #fff);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 12px;
+  }
+  .title-caret-left {
+    height: 40px;
+  }
+
+  .container-main, .container-main-try-again {
+    align-self: center;
+    background-color: #eee;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    z-index: 3;
+    width: 480px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 14px 12px;
+  }
+
+  .container-main {
+    height: 640px;
+  }
+
+  .container-main-try-again {
+    height: 250px;
+  }
+
+  .container-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-logo-image {
+    display: flex;
+  }
+
+  .container-logo-text span:last-child {
+    margin-top: -15px;
+    margin-left: 25px;
+    font-style: italic;
+  }
+
+  .container-help-text {
+    width: 100%;
+    padding-top: 30px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .container-help-text .new-password {
+    text-align: center;
+  }
+
+  .title-help-text-portal {
+    font-size: 20px;
+    font-family: "Helvetica-Bold";
+    line-height: 24px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .message-help-text {
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .container-button {
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .hidden-portal {
+    opacity: 0;
+  }
+
+  .container-back-to-login {
+    padding-top: 20px;
+    cursor: pointer;
+    align-self:center;
+  }
+  .tooltip-password {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    margin-top: 18px;
+  }
+
+  .tooltip-password .tooltip-arrow {
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #000;
+    bottom: 100%;
+    left: 25px;
+  }
+
+  .tooltip-password .tooltip-text {
+    color: #ffffff;
+    line-height: 14px;
+    font-size: 12px;
+    background: #000;
+    padding: 10px;
+    border-radius: 2px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 5px 10px;
+  }
+
+  .password-hint {
+    display: none;
+  }
+
+  .alert-danger {
+    padding-top: 15px;
+  }
+
+  .change-password-buttons button:first-child {
+    margin-right: 10px;
+  }
+
+  .change-password-buttons button:last-child {
+    margin-left: 10px;
+  }
+}
+
+
+
+.hidden {
+  display: block !important;
+  opacity: 0 !important;
+}
+
+.hidden {
+  display: block !important;
+  opacity: 0 !important;
+}
+
+input {
+  height: auto !important;
+  margin-top: 25px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  padding-bottom: 6px !important;
+  font-size: 16px !important;
+  line-height: 24px !important;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.8) !important;
+  background-color: transparent !important;
+  color: rgba(0, 0, 0, 0.9) !important;
+}
+
+input::placeholder {
+  color: rgba(0, 0, 0, 0.4) !important;
+}
+
+input:focus {
+  box-shadow: none !important;
+}
+
+label {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0;
+  transform: translateY(-54px);
+}
+
+.alert-danger {
+  background: none;
+  border: none;
+  color: rgb(255, 88, 88);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+.container-validation-password {
+  color: rgba(0, 0, 0, 0.5);
+  padding-top: 25px;
+  font-size: 12px;
+}
+
+.container-validation-password .validation-item {
+  display: flex;
+  align-items: center;
+}
+
+.container-validation-password .validation-item .letter {
+  padding-right: 30px;
+}
+
+.container-validation-password .validation-item.valid {
+  color: transparent;
+  text-shadow: 0 0 0 #60b700;
+}
+
+.password-eye,
+.success-icon {
+  position: absolute;
+  right: 0;
+  bottom: 26px;
+}
+
+.password-eye {
+  z-index: 2;
+  opacity: 0;
+}
+
+.success-icon {
+  z-index: 1;
+  display: none;
+}
+
+.container-input {
+  padding-top: 20px;
+  position: relative;
+}
+
+.container-email {
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.container-email > .success-email {
+  font-family: "NissanBrandBold";
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.container-message {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.container-message > div {
+  padding-bottom: 25px;
+}
