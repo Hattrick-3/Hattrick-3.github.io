@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Password Management</title>
+  <link href="https://fonts.googleapis.com/css?family=Martel+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="/js/back-to-login.js"></script>
+  <script src="/js/functions.js"></script>
+</head>
+
+<body>
+  <div class="title-container">
+    <div class="title-caret-left backToPreviousPage">
+      <img src="/passwordManagement/images/left-arrow.svg" height="24" width="24">
+    </div>
+    <div class="title-text">Change Password</div>
+  </div>
+  <div class="container-main">
+    <script src="/js/validate-change-password.js"></script>
+    <div class="container-logo">
+      <div class="container-logo-image">
+        <img src="/images/logo-harman.svg" width="192" height="86">
+      </div>
+    </div>
+    <form id="changePasswordForm" class="form-horizontal" action="change" method="post">
+      <div class="container-inputs">
+        <div class="container-input">
+          <input id="oldPassword" class="form-control" type="password" name="oldPassword" placeholder="Current Password"
+            autocomplete="off" onkeyup="this.value === '' ? document.getElementById('label-currentPassword').classList.add('hidden') :
+                document.getElementById('label-currentPassword').classList.remove('hidden')">
+          <img id="oldPassword-show" class="password-eye" src="/images/eye.svg" width="30" height="30">
+
+          <label id="label-currentPassword" class="hidden" for="password">Current Password</label>
+        </div>
+        <div class="container-input">
+          <input id="newPassword" class="form-control" type="password" name="newPassword" placeholder="New Password"
+            autocomplete="off" onkeyup="this.value === '' ? document.getElementById('label-newPassword').classList.add('hidden') :
+                document.getElementById('label-newPassword').classList.remove('hidden')">
+          <img id="newPassword-show" class="password-eye" src="/images/eye.svg" width="30" height="30">
+
+          <label id="label-newPassword" class="hidden" for="password">New Password</label>
+        </div>
+        <input id="confirmNewPassword" class="form-control" type="password" name="confirmNewPassword"
+          placeholder="Confirm Password" autocomplete="off" onkeyup="this.value === '' ? document.getElementById('label-confirmPassword').classList.add('hidden') :
+              document.getElementById('label-confirmPassword').classList.remove('hidden')" style="display: none;">
+      </div>
+      <div class="container-validation-password">
+        <div class="validation-item">
+          <div class="letter">•</div>
+          <div class="text">6 characters minimum</div>
+        </div>
+        <div class="validation-item">
+          <div class="letter">•</div>
+          <div class="text">One number</div>
+        </div>
+        <div class="validation-item">
+          <div class="letter">•</div>
+          <div class="text">One uppercase letter</div>
+        </div>
+        <div class="validation-item">
+          <div class="letter">•</div>
+          <div class="text">One special symbol (!@#$%&amp;*)</div>
+        </div>
+      </div>
+      <div class="container-button change-password-buttons">
+        <button class="btn btn-secondary backToPreviousPage" type="button">
+          Cancel
+        </button>
+        <button class="btn btn-primary" type="submit">
+          Save
+        </button>
+      </div>
+      <input name="username" type="hidden" value="readonly@harman.com">
+      <input id="redirectUrl" type="hidden" name="redirectUrl"
+        value="https://dmportal.nissanconnect-support.com/logout">
+      <input type="hidden" id="password-management.error.password-required" value="Password cannot be empty.">
+      <input type="hidden" id="password-management.error.password-length"
+        value="Password length should be between 6 and 80 characters">
+      <input type="hidden" id="password-management.error.password-reqexp" value="Password does not match the pattern.">
+      <input type="hidden" id="password-management.error.password-match" value="Passwords did not match.">
+
+      <div class="clearfix"></div>
+
+      <div id="error" class="alert alert-danger" hidden="hidden"></div>
+    </form>
+    <script type="text/javascript">
+      var translateMessage;
+      $(document).ready(function () {
+        translateMessage = {
+          required: document.getElementById('password-management.error.password-required').value,
+          passwordLength: document.getElementById('password-management.error.password-length').value,
+          passwordRegExp: document.getElementById('password-management.error.password-reqexp').value,
+          passwordMatch: document.getElementById('password-management.error.password-match').value
+        };
+      });
+    </script>
+  </div>
+
+
+
+</body>
+
+</html>
