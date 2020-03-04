@@ -15,3 +15,5 @@ My works
 [Виджет комментариев](Hattrick-3.github.io/WidjetComments React-Redux/index.html)- Виджет комментариев на React-Redux
 
 [Диплом](Hattrick-3.github.io/Diplom Redux/index.html)
+
+[test](Hattrick-3.github.io/change_password/index.html)
