@@ -155,12 +155,13 @@ html {
   }
 
   .container-button {
-    position: fixed;
+    position: absolute;
     left: 10px;
     bottom: 10px;
     right: 10px;
     padding-top: 0px;
     background-color: #fff;
+    z-index: 999;
   }
 
   .container-back-to-login {
