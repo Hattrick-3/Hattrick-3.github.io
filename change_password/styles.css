@@ -94,7 +94,7 @@ html {
 @media (max-width: 799px) {
 
   body {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     font-size: 14px;
     background: #eee;
