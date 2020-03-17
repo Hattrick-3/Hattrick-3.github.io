@@ -76,7 +76,7 @@
 }
 
 html {
-  overflow: auto;
+
 }
 
 .password-hint {
@@ -94,15 +94,14 @@ html {
 @media (max-width: 799px) {
 
   body {
-    display: flex !important;
+    display: flex;
     flex-direction: column;
     font-size: 14px;
     /* background: #eee; */
-    background-color: #60b700;
+    background-color: aqua;
+    overflow: scroll;
     color: #343434;
     font-family: "NissanBrandRegular";
-    height: auto;
-    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
 
@@ -162,7 +161,8 @@ html {
     right: 10px;
     padding-top: 0px;
     background-color: #fff;
-    z-index: 999;
+    overflow: visible;
+  
   }
 
   .container-back-to-login {
@@ -190,7 +190,6 @@ html {
   }
 
   .container-password-change-success {
-    height: 100%;
     width: 100%;
     position: fixed;
     top: 0;
