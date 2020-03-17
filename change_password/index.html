@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="height=device-height, initial-scale=1.0, user-scalable=no">
   <title>Password Management</title>
   <link href="https://fonts.googleapis.com/css?family=Martel+Sans:400,700" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -27,7 +27,7 @@
     <div class="title-text">Change Password</div>
   </div>
   <div class="container-main">
-    <script src="/js/validate-change-password.js"></script>
+    <script src="/js/validate-change-password.js" defer></script>
     <div class="container-logo">
       <div class="container-logo-image">
         <img src="/images/logo-harman.svg" width="192" height="86">
@@ -77,7 +77,7 @@
         <button class="btn btn-secondary backToPreviousPage" type="button">
           Cancel
         </button>
-        <button class="btn btn-primary" type="submit">
+        <button class="btn btn-primary" type="submit" style="display: block !important;">
           Save
         </button>
       </div>
@@ -103,6 +103,16 @@
           passwordRegExp: document.getElementById('password-management.error.password-reqexp').value,
           passwordMatch: document.getElementById('password-management.error.password-match').value
         };
+        if (window.location.search.indexOf("user=portal") !== -1) {
+          $("#sign-up").remove();
+          $("#sign-up-mobile").remove();
+          $("body").addClass("dmportal");
+          $("body").css('display', 'flex');
+        } else {
+          $("#sign-up").remove();
+          $("body").addClass("ma");
+          $("body").css('display', 'block');
+        }
       });
     </script>
   </div>
