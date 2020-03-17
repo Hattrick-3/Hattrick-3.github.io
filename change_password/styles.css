@@ -76,7 +76,7 @@
 }
 
 html {
-  height: 100%;
+  overflow: auto;
 }
 
 .password-hint {
@@ -100,7 +100,7 @@ html {
     background: #eee;
     color: #343434;
     font-family: "NissanBrandRegular";
-    height: 100%;
+    height: auto;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
   }
