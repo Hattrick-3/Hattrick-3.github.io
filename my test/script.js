@@ -1,7 +1,7 @@
 var input = document.querySelector('.input');
 var area = document.querySelector('textarea');
 
-input.addEventListener('keypress', function (ev) {
+input.addEventListener('keydown', function (ev) {
     var b;
     //     area.value = `key: ${ev.key}
     // keyCode: ${ev.keyCode}
