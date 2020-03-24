@@ -12,7 +12,7 @@ input.addEventListener('keyup', function (ev) {
     //     var a = JSON.stringify(ev);
     //     console.log(a)
     for (key in ev) {
-        b += `${key}: ${ev.key} 
+        b += `${key}: ${ev[key]} 
 `
     }
     area.value = b;
