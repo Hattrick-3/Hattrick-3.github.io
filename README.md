@@ -17,3 +17,5 @@ My works
 [Диплом](Hattrick-3.github.io/Diplom Redux/index.html)
 
 [test](Hattrick-3.github.io/change_password/index.html)
+
+[test2](Hattrick-3.github.io/my test/index.html)
