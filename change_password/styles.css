@@ -95,8 +95,7 @@
     display: flex;
     flex-direction: column;
     font-size: 14px;
-    /* background: #eee; */
-    background-color: aqua;
+    background: #eee;
     overflow: visible;
     color: #343434;
     font-family: "NissanBrandRegular";
@@ -153,8 +152,7 @@
   }
 
   .container-button {
-    position: -webkit-sticky;
-    /* position: sticky; */
+    position: fixed;
     left: 10px;
     bottom: 10px;
     right: 10px;
