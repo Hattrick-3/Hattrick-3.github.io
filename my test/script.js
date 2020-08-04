@@ -124,16 +124,9 @@ window.onload = function () {
     input.focus()
     input.click()
 }
-input.addEventListener('keypress', function (ev) {
-    var b;
-    //     area.value = `key: ${ev.key}
-    // keyCode: ${ev.keyCode}
-    // code: ${ev.code}
-    // which: ${ev.which}
-    // charCode: ${ev.charCode}`
 
-    //     var a = JSON.stringify(ev);
-    //     console.log(a)
+input.oninput = function (ev) {
+    var b;
     for (key in ev) {
         b += `${key}: ${ev[key]}
 `
@@ -141,4 +134,27 @@ input.addEventListener('keypress', function (ev) {
     area.value = b;
     input.nextElementSibling.focus()
     input.nextElementSibling.click()
-})
+};
+// input.addEventListener('keypress', function (ev) {
+//     var b;
+//     //     area.value = `key: ${ev.key}
+//     // keyCode: ${ev.keyCode}
+//     // code: ${ev.code}
+//     // which: ${ev.which}
+//     // charCode: ${ev.charCode}`
+
+//     //     var a = JSON.stringify(ev);
+//     //     console.log(a)
+// //     for (key in ev) {
+// //         b += `${key}: ${ev[key]}
+// // `
+// //     }
+// //     area.value = b;
+// //     input.nextElementSibling.focus()
+// //     input.nextElementSibling.click()
+// })
+
+// $('input').on('textInput', e => {
+//     var keyCode = e.originalEvent.data.charCodeAt(0);
+//     // keyCode is ASCII of character entered.
+// })
