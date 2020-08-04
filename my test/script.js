@@ -124,7 +124,7 @@ window.onload = function () {
     input.focus()
     input.click()
 }
-input.addEventListener('keydown', function (ev) {
+input.addEventListener('keypress', function (ev) {
     var b;
     //     area.value = `key: ${ev.key}
     // keyCode: ${ev.keyCode}
