@@ -122,8 +122,9 @@ var area = document.querySelector('textarea');
 
 window.onload = function () {
     input.focus()
+    input.click()
 }
-input.addEventListener('keyup', function (ev) {
+input.addEventListener('keydown', function (ev) {
     var b;
     //     area.value = `key: ${ev.key}
     // keyCode: ${ev.keyCode}
@@ -134,8 +135,10 @@ input.addEventListener('keyup', function (ev) {
     //     var a = JSON.stringify(ev);
     //     console.log(a)
     for (key in ev) {
-        b += `${key}: ${ev[key]}`
+        b += `${key}: ${ev[key]}
+`
     }
     area.value = b;
     input.nextElementSibling.focus()
+    input.nextElementSibling.click()
 })
