@@ -10,14 +10,32 @@
 
 </head>
 
-<body onload="checkForUpdate()">
+<!-- <body onload="checkForUpdate()"> -->
 
+<body>
     <input type="text" inputmode="numeric" class="input">
     <input type="text" inputmode="numeric" class="input" style="color: blue;">
     <div style="width: 100px; height: 100px"></div>
     <a href=" yyyyyyy">aaaaa</a>
     <textarea name="" id="" cols="30" rows="10"></textarea>
-    <script type="text/javascript" src="update_cache.js"></script>
+    <!-- <script type="text/javascript" src="update_cache.js"></script> -->
+    <script type="text/javascript">
+        window.addEventListener('load', function (e) {
+            window.applicationCache.addEventListener('updateready', function (e) {
+                if (window.applicationCache.status == window.applicationCache.UPDATEREADY) {
+                    // Browser downloaded a new app cache.
+                    // Swap it in and reload the page to get the new hotness.
+                    window.applicationCache.swapCache();
+                    if (confirm('A new version of this site is available. Load it?')) {
+                        window.location.reload();
+                    }
+                } else {
+                    // Manifest didn't changed. Nothing new to server.
+                }
+            }, false);
+
+        }, false);
+    </script>
 </body>
 
 </html>
