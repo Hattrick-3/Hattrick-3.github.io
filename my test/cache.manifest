@@ -1,6 +1,14 @@
 CACHE MANIFEST
 # version 1.16
+
+CAHE:
 styles.css
 update_cache.js
 index.html
 #all other files
+
+SETTINGS:
+prefer-online
+
+NETWORK:
+*
