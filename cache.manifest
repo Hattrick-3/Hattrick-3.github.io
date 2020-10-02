@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# version 1.17
+
+CACHE:
+styles.css
+update_cache.js
+index.html
+#all other files
+
+SETTINGS:
+prefer-online
+
+NETWORK:
+*

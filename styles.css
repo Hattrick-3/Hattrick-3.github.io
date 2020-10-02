@@ -1,0 +1,13 @@
+.wrapper {
+    margin: auto;
+    width: 600px;
+    padding-top: 5rem;
+}
+
+.input {
+    color: tomato;
+}
+
+div {
+    background-color: yellowgreen;
+}
